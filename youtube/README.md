@@ -17,8 +17,14 @@ This image is for ARM64 format of instruction (Mac M1)
 ## How to run
 
 1. compile the docker image
+
+```
 docker build -t youtube-dl .
+```
 
 2. run the instance to download image and delete after run
+
+```
 docker run --rm -v $(pwd):/media youtube-dl URL_TO_DOWNLOAD
+```
 
