@@ -22,7 +22,7 @@ This image is for ARM64 format of instruction (Mac M1)
 docker build -t youtube-dl .
 ```
 
-2. run the instance to download video and delete after run
+2. run the instance to download video and stop the instance after run
 
 ```
 docker run --rm -v $(pwd):/media youtube-dl URL_TO_DOWNLOAD
