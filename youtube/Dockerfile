@@ -7,6 +7,9 @@ LABEL maintainer="Krish"
 RUN pip install --upgrade pip
 RUN pip install youtube_dl
 
+RUN apt update -y 
+RUN apt install -y ffmpeg
+
 COPY ./youtube-dl.conf /etc/youtube-dl.conf
 
 WORKDIR /media
